@@ -15,3 +15,20 @@ Inventories are automatically restored upon leaving. Crashes and connection loss
 `invsee.save` - Required to save changes made to a player's inventory.
 
 `invsee.user` - Combine with the above to allow copying offline players (users).
+
+*Requires ServerSideCharacters
+​
+Since the similar feature currently present in Essentials by Scavenger seems broken, and Essentials+ did not adopt this (I don't see how could this be "Essential" for a server), I decided to use my spare time in reworking this from the core. TShock now includes its own methods for managing this copypasta, which makes it fairly easy to put this to work.
+
+You can use this with Essentials: it should replace the old command with this one.
+
+Features: 
+An easy, and interactive way of reading player inventories by having your own replaced by theirs temporarily!
+Creates a backup of your own inventory, and restores it automatically on leave or through the use of a command. I wouldn't want you to lose your inventory in the proccess of looking for hackers.
+It is now safe to copy multiple inventories in succession: the backup will always contain your original inventory.
+
+invsee.main - Required to use the invsee command.
+
+invsee.user - Combine with the above to allow copying offline players (users). 
+
+https://tshock.co/xf/index.php?resources/invsee.50/
